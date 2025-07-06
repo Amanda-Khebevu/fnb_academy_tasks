@@ -1,0 +1,49 @@
+table{
+    color: #fff;
+    text-align: center;
+    border-collapse: collapse;
+    font: normal 3em Arial, Helvetica, sans-serif;
+}
+
+tr{
+    height: 16.02vh;
+    background-color: #4e494d;
+}
+
+td{
+    width: 25vw;
+    border: 1px solid #4e494d;
+}
+
+#inputBox{
+    background-color: #4e494d;
+    text-align: right;
+    width: 100%;
+    font-size: 2em;
+    color: #fff;
+    border: 0;
+}
+
+.clearButton {
+    background-color: #656165;
+}
+
+.clearButton:active {
+    background-color: #514d51;
+}
+
+.digitButton {
+    background-color: #807e89;
+}
+
+.digitButton:active {
+    background-color: #66656e;
+}
+
+.operatorButton {
+    background-color: #ff9e06;
+}
+
+.operatorButton:active {
+    background-color: #cc7e05;
+}

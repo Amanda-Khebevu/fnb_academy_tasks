@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LEARNING_SWITCH_STATEMENTS</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <label for="wearther">What's the wearther like?</label>
+  <select id="wearther">
+    <option value="sunny">Sunny</option>
+    <option value="windy">Windy</option>
+    <option value="rainy">Rainy</option>
+    <option value="snowy">Snowy</option>
+    <option value="cloudy">Cloudy</option>
+  </select>
+  <a href="#" onclick="buttonPressed()">GO!</a>
+  <p id="outputText">Weather advice :</p>
+
+  <script>
+      function buttonPressed(){
+        var weather = document.getElementById("wearther").value;
+        var advice;
+
+        switch(weather){
+          case "sunny":
+            advice = "Wear your sunglasses";
+            break;
+          case "windy":
+            advice = "Wear a jacket";
+            break;
+          case "rainy":
+            advice = "Wear a raincoat and carry an umbrella";
+            break;
+          case "snowy":
+            advice = "Dress warmly";
+            break;
+          case "cloudy":
+            advice = "Carry a jacket. It might rain";
+            break;
+        }
+        document.getElementById("outputText").innerHTML = "Weather advice : " + advice;
+      }
+  </script>
+
+
+</body>
+</html>
